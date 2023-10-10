@@ -27,9 +27,15 @@
     <ClInclude Include="src\BareBones\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\BareBones\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BareBones\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BareBones\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

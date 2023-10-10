@@ -2,8 +2,8 @@
 
 // For use by Bare Bones applications
 
-#include <stdio.h>
 #include "BareBones/Application.h"
+#include "BareBones/Log.h"
 
 // -- Entry Point -------------------
 #include "BareBones/EntryPoint.h"

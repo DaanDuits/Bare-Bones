@@ -1,0 +1,3 @@
+[submodule "BareBones/vendor/spdlog"]
+	path = BareBones/vendor/spdlog
+	url = https://github.com/gabime/spdlog
