@@ -4,6 +4,7 @@
 
 #include"Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace BareBones {
 	class BB_API Log

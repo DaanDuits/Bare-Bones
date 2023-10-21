@@ -4,6 +4,9 @@
     <Filter Include="BareBones">
       <UniqueIdentifier>{567C14B7-C2E6-C82D-0B25-7AD377CEA682}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BareBones\Events">
+      <UniqueIdentifier>{7A2B4485-6624-63D7-8F56-485C7BAE42E3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BareBones.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\BareBones\EntryPoint.h">
       <Filter>BareBones</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BareBones\Events\ApplicationEvent.h">
+      <Filter>BareBones\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BareBones\Events\Event.h">
+      <Filter>BareBones\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BareBones\Events\KeyEvent.h">
+      <Filter>BareBones\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BareBones\Events\MouseEvent.h">
+      <Filter>BareBones\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\BareBones\Log.h">
       <Filter>BareBones</Filter>
