@@ -1,9 +1,7 @@
 #pragma once
 
+#include "bbpch.h"
 #include "BareBones/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace BareBones
 {

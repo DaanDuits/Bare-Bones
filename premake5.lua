@@ -10,6 +10,12 @@ workspace "BareBones"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "BareBones/vendor/GLFW/include"
+
+include "BareBones/vendor/GLFW"
+
 project "BareBones"
     location "BareBones"
     kind "SharedLib"
@@ -17,6 +23,9 @@ project "BareBones"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+    pchheader "bbpch.h"
+    pchsource "BareBones/src/bbpch.cpp"
 
     files
     {
@@ -27,7 +36,14 @@ project "BareBones"
     includedirs
     {
         "%{prj.name}/vendor/spdlog/include",
-        "%{prj.name}/src"
+        "%{prj.name}/src",
+        "%{IncludeDir.GLFW}"
+    }
+
+    links
+    {
+        "GLFW",
+        "opengl32.lib"
     }
 
     filter "system:windows"

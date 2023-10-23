@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace BareBones
 {
 	class BB_API MouseMovedEvent : public Event
