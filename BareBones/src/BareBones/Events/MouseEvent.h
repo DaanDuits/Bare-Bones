@@ -39,6 +39,7 @@ namespace BareBones
 		{
 			std::stringstream ss;
 			ss << "MouseScrolledEvent: " << m_XOffset << ", " << m_YOffset;
+			return ss.str();
 		}
 
 		EVENT_CLASS_TYPE(MouseScrolled)
